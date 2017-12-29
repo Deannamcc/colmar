@@ -1,0 +1,105 @@
+body {
+  font-family: 'Oxygen', sans-serif;
+  line-height: 1.2;
+  justify-content: center;
+}
+
+/* Header */
+
+header {
+  padding: 16px 24px 16px 24px;
+}
+
+
+.logo {
+  font-size: 1.5rem;
+  color: #307af2;
+  padding: 32px;
+  height: 32px;
+
+}
+.container .learn, .grid, .guest, .fisma {
+  background-color: #edf4ff;
+}
+
+a {
+  color: #307af2;
+}
+.desktop ul li{
+  display: inline-block;
+  align-items: flex-end;
+  padding-right: 16px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/* Learn section */
+
+.banner img {
+  display: flex;
+  width: 60%;
+  padding: 32px 24px 32px 24px;
+
+}
+
+.right-text {
+  display: inline-block;
+}
+.right-text h1 {
+  font-family: Oxygen, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #307af2;
+}
+.right-text h3 {
+  font-family: Oxygen, sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #307af2;
+}
+
+.button {
+  background-color:  #307af2;
+  text-align: center;
+  display: block;
+  padding: 16px 0;
+  border-radius: 8px;
+}
+
+.button a {
+  color: white;
+}
+.button span:hover {
+  color: #1f4f9e
+}
+
+/* Start Learning Section */
+#grid .courses img{
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.course {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 32%
+  margin-bottom: 32px;
+}
+
+/* Footer */
+
+footer {
+  border-top: 2px;
+  color: #edf4ff
+  padding-top: 16px;
+}
+
+footer nav {
+  color: black
+}
+footer ul li {
+  display: inline-block;
+  align-items: flex-end;
+  padding-right: 16px;
+  font-family: 'Oxygen', sans-serif;
+}
