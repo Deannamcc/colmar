@@ -14,7 +14,7 @@
 <header>
   <div class="container">
     <div class="logo">
-      <img src="resources.images.ic-logo.svg" alt="Colmar Logo">
+      <img src="resources/images/ic-logo.svg" alt="Colmar Logo">
       <h1>COLMAR
       <span>ACADEMY</span>
       </h1>
@@ -28,31 +28,38 @@
       </ul>
     </nav>
 
-    <!-- Add in nav for mobile -->
-  </div>
+    <nav class="mobilenav">
+           <img src="./resources/images/ic-logo.svg" alt="logo"/>
+           <a href="#"><img src="resources/images/ic-on-campus.svg" alt="campus" /></a>
+           <a href="#"><img src="resources/images/ic-online.svg" alt="online" /></a>
+           <a href="#"><img src="resources/images/ic-login.svg" alt="login" /></a>
+       </nav>
+    </div>
 </header>
 
 <!-- Learn section -->
+
 <div class="container">
-  <div class="learn">
-    <div class="banner">
+  <div class="banner">
+    <div class="banner-image">
       <img src="resources/images/banner.jpg" alt="Students studying together">
     </div>
-
-  <div class="right-text">
-    <h1>Learn something <br/> new everyday</h1>
-    <h3>Lorem ipsum dolor sit amet, consectetur adispiscing elit.</h3>
-    <span class="button"><a href="#">Start Here</a></span>
+    <div class="banner-right">
+      <div class="right-text">
+        <h1>Learn something <br/> new everyday</h1>
+        <h3>Lorem ipsum dolor sit amet, consectetur adispiscing elit.</h3>
+        <span class="button"><a href="#">Start Here</a></span>
+      </div>
+    </div>
   </div>
- </div>
 </div>
 
 <!-- Info section -->
 
 <!--Add mobile code and details-->
 
-  <div class="info">
-    <div class="image">
+  <div class="info-section">
+    <div class="image-container">
       <img src="resources/images/information-main.jpg" alt="Man reading in park">
       <h1>It doesn't hurt to keep practicing</h1>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nisi corporis, accusantium at id expedita asperiores enim! Minima molestias autem nihil odio? Incidunt, totam distinctio. Reiciendis exercitationem pariatur fugiat</p>
@@ -129,7 +136,7 @@
       </div>
     </div>
     <div class="course">
-      <img src="resoruces/images/course-business" alt="chess set">
+      <img src="resources/images/course-business.jpg" alt="chess set">
       <div class="course-description">
         <h4>Business</h4>
         <span>COURSES</span>
@@ -137,7 +144,7 @@
       </div>
     </div>
     <div class="course">
-      <img src="resources/images/course-marketing" alt="man's hand using an Apple Watch">
+      <img src="resources/images/course-marketing.jpg" alt="man's hand using an Apple Watch">
       <div class="course-description">
         <h4>Marketing</h4>
         <span>COURSES</span>
@@ -149,7 +156,7 @@
 
 <!-- Thesis Exhibit Section -->
 
-<div class="container">
+<div class="thesis-container">
   <div id="thesis">
     <h1> Thesis Exhibit</h1>
   <div class="exhibit">
@@ -176,9 +183,10 @@
     </div>
   </div>
 </div>
-</div>
+
 
   <!-- Footer -->
+
   <footer>
     <span>&#169; Colmar Academy. All rights reserved</span>
     <nav>
@@ -188,7 +196,5 @@
       </ul>
     </nav>
   </footer>
-
-
   </body>
 </html>

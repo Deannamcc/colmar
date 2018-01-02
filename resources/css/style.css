@@ -1,13 +1,22 @@
 body {
   font-family: 'Oxygen', sans-serif;
   line-height: 1.2;
-  justify-content: center;
+  font-size: 16px;
+
 }
 
-/* Header */
+
+.container  {
+  margin-left: 1.5rem;
+  display: flex;
+  }
+
+  /* Header */
 
 header {
-  padding: 16px 24px 16px 24px;
+
+  height: 2rem;
+  width: 100%;
 }
 header .container {
   display: flex;
@@ -18,49 +27,76 @@ header .container {
 .logo {
   font-size: 1.5rem;
   color: #307af2;
-  padding: 32px;
-  height: 32px;
+  padding: 2rem;
+  height: 2rem;
   display: inline-flex;
   text-align: left;
 }
 
+.logo img {
+  height: 4rem;
+}
 .logo h1 {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .logo h1 span{
   color: black;
 }
 
-.container .learn, .guest, .fisma {
+.container .guest, .fisma {
   background-color: #e1e2f7;
 }
 
-a {
+.desktop a {
   color: #307af2;
   text-decoration: none;
   font-size: 1.5rem;
 }
-.desktop ul li{
-  display: inline-block;
-  align-items: flex-end;
-  padding-right: 16px;
-  font-family: 'Oxygen', sans-serif;
+
+.desktop ul a:hover {
+  color: #1f4f9e;
 }
 
+.desktop ul li{
+  display: inline-flex;
+  align-items: flex-end;
+  flex-direction: row;
+  padding-right: 1rem;
+  padding-top: 2.5rem;
+  font-family: 'Oxygen', sans-serif;
+}
+.mobilenav {
+  display: none;
+}
 /* Learn section */
 
-.banner img {
+.banner {
+  margin-top: 4rem;
+  background-color: #e1e2f7;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.banner-image img {
   display: flex;
   width: 60%;
   height: auto;
   padding: 32px 24px 32px 24px;
+}
 
+ .banner-right  {
+  flex-basis: 40%
+  padding: 2rem 1.5rem;
 }
 
 .right-text {
-  display: inline-block;
-
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .right-text h1 {
   font-family: Oxygen, sans-serif;
@@ -70,7 +106,7 @@ a {
 }
 .right-text h3 {
   font-family: Oxygen, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 1.4rem;
   color: #307af2;
 }
@@ -93,8 +129,14 @@ a {
 }
 
 /* Info Section */
+.info-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 2rem;
+}
 
-.info img {
+.image-container img {
   display: flex;
   width: 60%;
   height: auto;
@@ -102,8 +144,8 @@ a {
 }
 
 .info-right {
-  display: inline-block;
-  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
   align-content: flex-end;
   width: 40%;
 }
@@ -135,6 +177,9 @@ a {
 .info-right a {
   font-size: 1rem;
   line-height: 3;
+}
+.info-right a:hover {
+  color: #1f4f9e;
 }
 /* Start Learning Section */
 #grid {
@@ -203,7 +248,9 @@ a {
 /* Thesis Section */
 
 
-
+.thesis-container {
+  background-color: white;
+}
 #thesis h1 {
   background-color: white;
 }
@@ -213,10 +260,21 @@ a {
   line-height: 3;
 }
 
+.video-info {
+  flex-wrap: wrap;
+}
+.rightside {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    width: 40%;
+}
+
 /* Footer */
 
+
 footer {
-  border-top: 2px solid #e1e2f7;;
+  border-top: 2px solid #e1e2f7;
   padding-top: 16px;
   padding-left: 24px;
   padding-bottom: 30px;
