@@ -7,7 +7,6 @@ body {
 
 
 .container  {
-  margin-left: 1.5rem;
   display: flex;
   }
 
@@ -38,6 +37,7 @@ header .container {
 }
 .logo h1 {
   font-size: 2rem;
+  padding-top: 10px;
 }
 
 .logo h1 span{
@@ -73,83 +73,91 @@ header .container {
   width: 100%;
   display: flex;
   flex-direction: row;
+  flex-basis: auto;
 }
 
-.banner-image img {
-  display: flex;
+.banner-image {
   width: 60%;
   height: auto;
   padding: 32px 24px 32px 24px;
 }
 
- .banner-right  {
-  flex-basis: 40%
-  padding: 2rem 1.5rem;
+.banner-image img {
+  width: 100%;
+}
+
+.banner-right  {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .right-text {
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 .right-text h1 {
   font-family: Oxygen, sans-serif;
   font-weight: 700;
   font-size: 2rem;
   color: #307af2;
+  padding-bottom: 20px;
 }
 .right-text h3 {
   font-family: Oxygen, sans-serif;
   font-weight: 700;
   font-size: 1.4rem;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
   color: #307af2;
 }
-
-.button {
+.right-text .button {
   background-color:  #307af2;
   text-align: center;
   padding: 0.8rem 5rem;
   border-radius: 8px;
   font-size: 1.4rem;
-  margin: 2rem 1.5rem;
 }
 
-.button a {
+.right-text .button a {
   color: white;
 }
-.button a:hover {
+.right-text .button a:hover {
   color: #1f4f9e;
 }
 
 /* Info Section */
 
 .info-section {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  width: 100%;
+  flex-basis: auto;
   padding-bottom: 2rem;
 }
 
-.image-container img {
-  display: flex;
+.info-section .image-container {
   width: 60%;
-  height: auto;
-  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px 32px 24px;
 }
-.info-section h1, p, h6 {
-  display: flex;
-  flex-direction: row;
-  width: 60%;
+.info-section .image-container img {
+  object-fit: contain;
+}
+.info-section .info-text h1, p, h6 {
   padding-bottom: 2rem;
+}
+.info-section h1 {
+  font-size: 1.5rem;
+}
+.info-section h6 {
+  font-size: 0.8rem;
 }
 
 .info-right {
-  display: inline-flex;
-  flex-direction: column;
-  align-content: flex-start;
   width: 40%;
+  display: flex;
+  flex-direction: column;
 }
 
 .info-right img {
@@ -198,7 +206,7 @@ header .container {
   margin-right: 72px;
 }
 
- h1 {
+#grid h1 {
   color: #307af2;
   font-size: 2.5rem;
   display: block;
