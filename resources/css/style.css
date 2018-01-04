@@ -295,12 +295,6 @@ body {
 
 /* Thesis Section */
 
-.thesis-section {
-  width: 100%;
-  display: block;
-  padding-left: 1.5rem;
-}
-
 .thesis-title {
   font-size: 2.5rem;
   text-align: center;
@@ -309,11 +303,23 @@ body {
   padding-bottom: 2rem;
 }
 
+.thesis-section {
+  width: 100%;
+  display: flex;
+  padding-left: 1.5rem;
+}
+
 .thesis-section .thesis-left {
     padding: 2rem 1.5rem;
-    width:60%
+    width:60%;
     height: auto;
   }
+
+.thesis-section .thesis-left video {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
 
 .video-info h3 {
   font-size: 1.5rem;
@@ -329,7 +335,6 @@ body {
   width: 40%;
   display: flex;
   flex-direction: column;
-  border-left: 1px solid #e1e2f7;
   padding-top: 32px;
 }
 
@@ -372,11 +377,11 @@ footer {
 footer nav a {
   color: black
 }
+
 footer ul li {
   display: inline-block;
   align-items: flex-end;
   padding-right: 24px;
-  font-family: 'Oxygen', sans-serif;
 }
 
 
