@@ -5,6 +5,13 @@ body {
 
 }
 
+.mobile {
+  /* display: none; */
+}
+.desktop {
+  display: none;
+}
+
 /* Header */
 
 .header-container {
@@ -21,7 +28,6 @@ body {
   height: 2rem;
   display: inline-flex;
   text-align: left;
-  width: 50%;
 }
 
 .logo img {
@@ -37,7 +43,7 @@ body {
 }
 
 .nav-links {
-    width: 50%;
+    flex-grow: 1;
 }
 
 .nav-links a {
@@ -51,8 +57,9 @@ body {
 }
 
 .nav-links ul {
-  display: inline-flex;
-  align-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .nav-links li {
@@ -60,11 +67,16 @@ body {
   padding-top: 2.5rem;
 }
 
-.mobile {
-  /* display: none; */
+.mobile-links {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 2rem;
 }
-.desktop {
-  /* display: none; */
+
+.mobile-links img {
+  height: 4rem;
 }
 
 /* Learn section */
@@ -110,11 +122,11 @@ body {
 
 .right-text h3 {
   font-family: Oxygen, sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.4rem;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  color: #307af2;
+  color: black;
 }
 .right-text .button {
   background-color:  #307af2;
@@ -310,7 +322,7 @@ body {
 }
 
 .thesis-section .thesis-left {
-    padding: 2rem 1.5rem;
+    padding: 2rem;
     width:60%;
     height: auto;
   }
@@ -360,7 +372,12 @@ body {
 .thesis-top {
     background-color: #e1e2f7;
 }
-
+.social-media {
+  font-weight: 700;
+  font-size: 1.5rem;
+  display: inline-flex;
+  color:#307af2;
+}
 /* Footer */
 
 
@@ -385,78 +402,9 @@ footer ul li {
 }
 
 
-/* Tablet Mobile */
-
-@media only screen and (max-width: 1024px;) {
-  .desktopdisplay: none;
-  }
-
-  .mobilenav {
-    display: flex;
-  }
-
-  .course-description {
-    padding-bottom: 1.5rem;
-  }
-
-
 /* mobile */
 
-@media only screen and (max-width: 760px) {
-  .container {
-    margin: 0;
-  }
-
-  .logo {
-    display: none;
-  }
+@media only screen and (max-width: 1024px) {
 
 
-  .mobilenav img {
-    height: 2.5rem;
-  }
-
-  .mobilenav img:first-child {
-    display: flex;
-  }
-
-  .mobilenav {
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .banner .container {
-   flex-direction: column;
-   align-items: center;
- }
-
- .banner-image {
-   width: 100%;
-   padding: 0;
- }
- .banner-right {
-     padding-left: 1rem;
-   }
-
-   .banner-right h1 {
-     padding-top: 2rem;
-     padding-bottom: 2rem;
-   }
-
-   .banner-right h4 {
-     padding-bottom: 1.5rem;
-   }
-
-  button {
-    margin-bottom: 2rem;
-    width: 100%;
-  }
-
-  .desktop-image {
-    display: none;
-  }
-
-  .mobile-image {
-    display: flex;
-  }
+}

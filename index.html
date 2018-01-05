@@ -6,6 +6,9 @@
     <link href="resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="resources/css/style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
   </head>
 
   <body>
@@ -15,32 +18,32 @@
   <div class="header-container">
   <div class="logo">
     <img src="resources/images/ic-logo.svg" alt="Colmar Logo">
+    <div class="desktop">
     <h1>COLMAR
     <span>ACADEMY</span>
     </h1>
   </div>
-  <div class="nav-links">
-    <nav class="desktop">
+  </div>
+  <nav class="desktop nav-links">
       <ul>
         <li><a href="#">On Campus</a></li>
         <li><a href="#">Online</a></li>
         <li><a href="#">For Companies</a></li>
         <li><a href="#"> Sign In</a></li>
       </ul>
-      </nav>
-  <!-- Header Mobile Nav-->
-    <nav class="mobile">
+  </nav>
+  <!-- Header Mobile Nav -->
+    <nav class="mobile mobile-links">
       <a href="#"><img src="resources/images/ic-on-campus.svg" alt="campus" /></a>
       <a href="#"><img src="resources/images/ic-online.svg" alt="online" /></a>
       <a href="#"><img src="resources/images/ic-login.svg" alt="login" /></a>
     </nav>
-  </div>
 </div>
 </header>
 
 <!-- Learn section -->
 
-<div class="learn-container">
+<div class="learn-container" role="banner">
   <div class="banner">
     <div class="banner-image">
       <img src="resources/images/banner.jpg" alt="Students studying together">
@@ -59,7 +62,7 @@
 
 <!--Add mobile code and details-->
 
-  <div class="info-section">
+  <div class="info-section" role="complementary">
     <div class="info-left">
       <img src="resources/images/information-main.jpg" alt="Man reading in park">
       <div class="info-text">
@@ -71,7 +74,7 @@
     <div class="info-right">
         <div class="info-container">
           <div class="info-image">
-            <img class="desktop-image" src="resources/images/information-orientation.jpg" alt="Drone view of people walking">
+            <img class="desktop-image" src="resources/images/information-orientation.jpg" alt="Overhead view of people walking">
             <img class="mobile-image" src="resources/images/information-orientation-mobile.jpg">
           </div>
           <div class="info-text">
@@ -109,7 +112,7 @@
 
 <!-- Start Learning Section -->
 
-<div class="start-container">
+<div class="start-container" role="grid">
   <div class="start-title">
     <h1>Start Learning</h1>
   </div>
@@ -183,7 +186,7 @@
 
 <!-- Thesis Exhibit Section -->
 
-<div class="thesis-title">
+<div class="thesis-title" role="complementary">
   <h1> Thesis Exhibit</h1>
 </div>
 <div class="thesis-section">
@@ -195,6 +198,7 @@
         <h3>Reimagine Urban</h3>
         <p>Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,<br/> nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. <br/> Eiam eget magna laoreet, effictur dolor consequat, tristique ligula. </p>
       </div>
+
     </div>
     <div class="thesis-right">
       <div class="thesis-container thesis-top">
@@ -222,6 +226,13 @@
 
   <footer>
     <span>&#169; 2016 Colmar Academy. All rights reserved</span>
+    <div class="social-media" role="links">
+      <p>Find us on:
+        <i class="fa fa-facebook fa-lg"></i>
+        <i class="fa fa-twitter fa-lg"></i>
+        <i class=" fa fa-instagram fa-lg"></i>
+      </p>
+    </div>
     <nav>
       <ul>
         <li><a href="#">Terms</a></li>
