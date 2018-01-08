@@ -1,4 +1,4 @@
-body {
+html {
   font-family: 'Oxygen', sans-serif;
   line-height: 1.2;
   font-size: 16px;
@@ -6,9 +6,6 @@ body {
 }
 
 .mobile {
-  /* display: none; */
-}
-.desktop {
   display: none;
 }
 
@@ -67,18 +64,6 @@ body {
   padding-top: 2.5rem;
 }
 
-.mobile-links {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-top: 2rem;
-}
-
-.mobile-links img {
-  height: 4rem;
-}
-
 /* Learn section */
 
 .learn-container {
@@ -94,13 +79,13 @@ body {
   flex-basis: auto;
 }
 
-.banner-image {
+.banner-left {
   width: 60%;
   height: auto;
   padding: 32px 24px 32px 24px;
 }
 
-.banner-image img {
+.banner-left img {
   width: 100%;
 }
 
@@ -134,6 +119,7 @@ body {
   padding: 0.8rem 5rem;
   border-radius: 8px;
   font-size: 1.4rem;
+  width: 35%;
 }
 
 .right-text .button a {
@@ -213,7 +199,7 @@ body {
 
 .info-container h4 {
   font-size: 1.5rem;
-  line-height: 3;
+  margin-bottom: 1rem;
 }
 
 .info-container a {
@@ -404,7 +390,155 @@ footer ul li {
 
 /* mobile */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-device-width: 1024px) {
 
+  .mobile {
+    display: unset;
+    flex-grow: 1;
+  }
 
+  .mobile-links {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 2rem;
+  }
+
+  .mobile-links img {
+    height: 4rem;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner-left {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .banner-right {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+
+  .right-text {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    align-items: center;
+  }
+
+  .right-text h1,h3 {
+    text-align: center;
+  }
+
+  .right-text h1 {
+    font-size: 4rem;
+  }
+
+  .right-text h3 {
+    font-size: 3rem;
+  }
+
+  .right-text .button {
+    width: 70%;
+    margin-left: 3rem;
+    font-size: 2.5rem;
+  }
+
+  .info-section .info-left {
+    display: none;
+  }
+
+  .info-section .info-right {
+    width: 100%;
+  }
+
+  .mobile-image {
+    display: unset;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+
+  .info-container {
+    flex-direction: column;
+  }
+
+  .info-container .info-image {
+    width: 100%;
+  }
+
+  .info-container .info-image img {
+    width: 98%;
+  }
+
+  .info-container .info-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .info-container h4,h5 {
+    font-size: 200%;
+  }
+
+  .info-container a {
+    font-size: 200%;
+  }
+
+  .start-container {
+    background-color: unset;
+  }
+
+  .start-title {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .start-courses {
+    flex-direction: column;
+  }
+
+  .mobile-course {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    background-color: #e1e2f7;
+  }
+
+  .mobile-course h3,a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #307af2;
+  }
+
+  .thesis-section {
+    margin-left: unset;
+    padding: 0;
+  }
+
+  .thesis-section .thesis-left {
+    width: 100%;
+    padding: 0;
+  }
+  .thesis-section .thesis-right {
+    display: none;
+  }
+
+  .video-info {
+    display: none;
+  }
+
+  .thesis-section video {
+    margin-bottom: 2rem;
+  }
 }
