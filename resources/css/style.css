@@ -391,7 +391,6 @@ footer ul li {
 /* mobile */
 
 @media only screen and (max-device-width: 1024px) {
-
   .mobile {
     display: unset;
     flex-grow: 1;
@@ -460,6 +459,9 @@ footer ul li {
   .info-section .info-right {
     width: 100%;
   }
+  .info-text h4 {
+    font-weight: bold;
+  }
 
   .mobile-image {
     display: unset;
@@ -499,7 +501,7 @@ footer ul li {
   }
 
   .start-title {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     margin-bottom: 1rem;
   }
 
@@ -516,9 +518,11 @@ footer ul li {
   }
 
   .mobile-course h3,a {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-decoration: none;
     color: #307af2;
+    text-align: left;
+    padding: 1rem 0 1.5rem 1rem;
   }
 
   .thesis-section {
